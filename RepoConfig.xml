@@ -1,0 +1,22 @@
+<Configuration>
+    <Repo>
+        <Parametro>domo</Parametro>
+        <Folder>H:\This PC\Cloud\OneDrive - DOMO SOLUCOES EM T.I\tec-activities-domo\projetos</Folder>
+        <SubfolderSearch>True</SubfolderSearch>
+    </Repo>
+    <Repo>
+        <Parametro>pobruno</Parametro>
+        <Folder>H:\Repository\GitHub\pobruno</Folder>
+        <SubfolderSearch>False</SubfolderSearch>
+    </Repo>
+    <Repo>
+        <Parametro>repod</Parametro>
+        <Folder>D:\repod</Folder>
+        <SubfolderSearch>False</SubfolderSearch>
+    </Repo>
+    <Repo>
+        <Parametro>local</Parametro>
+        <Folder>H:\Repository</Folder>
+        <SubfolderSearch>False</SubfolderSearch>
+    </Repo>
+</Configuration>
