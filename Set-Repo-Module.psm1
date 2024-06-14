@@ -6,18 +6,18 @@
     A função `set-repo` permite que você navegue rapidamente para diferentes diretórios de repositórios
     usando parâmetros definidos em um arquivo de configuração XML. Suporta navegação para repositórios locais, remotos e específicos da empresa.
 
-.PARAMETER <Parametro>
+.PARAMETER Parametro
     Parâmetro para navegação. Os valores possíveis são definidos no arquivo de configuração XML.
 
-.PARAMETER <Subfolder>
+.PARAMETER Subfolder
     Especifica uma subpasta dentro do diretório de repositórios quando aplicável.
 
 .EXAMPLE
-    set-repo -domo -Subfolder "FOLDER1"
+    set-repo -Parametro domo -Subfolder "FOLDER1"
     Navega para a subpasta "FOLDER1" dentro do diretório de projetos da empresa Domo.
 
 .EXAMPLE
-    set-repo -pobruno
+    set-repo -Parametro pobruno
     Navega para o repositório de Bruno no GitHub.
 
 .NOTES
@@ -27,6 +27,7 @@
 function set-repo {
     [CmdletBinding()]
     param (
+        [Parameter(Mandatory=$true)]
         [string]$Parametro,
         [string]$Subfolder = ""
     )
